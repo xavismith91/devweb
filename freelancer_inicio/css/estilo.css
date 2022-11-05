@@ -153,7 +153,7 @@ padding: 2rem;
     height: 450px;
     position: relative;
     margin-bottom: 2rem;
-    border border-radius: 1rem;
+    border-radius: 1rem;
 }  
 
 
@@ -274,10 +274,11 @@ padding: 2rem;
         grid-template-rows: auto auto 20rem ;
         column-gap: 1rem;
         
-        .campo:nth-child(3),
+        
+    }
+    .campo:nth-child(3),
         .campo:nth-child(4) {
         grid-column: 1 / 3;
-    }
 }
 }
 
