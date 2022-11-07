@@ -308,15 +308,14 @@ padding: 2rem;
 }
 
 
-
-.input-text {
+.campo .input-text {
     
     width: 100%;
     border: none;
     padding: 1.5rem;
     border-radius: .5rem;
 
-}
+} 
 
 
 .boton:hover{
