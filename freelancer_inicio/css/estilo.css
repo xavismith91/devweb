@@ -83,7 +83,7 @@ padding: 2rem;
 
 .navegacion-principal a {
     
-    color: var(--blanco);
+    color: var(--blanco); 
     text-decoration: none;
     font-size: 2rem;
     font-weight: bold;
@@ -201,12 +201,13 @@ padding: 2rem;
 
 /** Servicios **/
 @media (min-width: 768px){
- .servicios {
-   display: grid;   
-   grid-template-columns: 1fr 1fr 1fr;   /** divide en 3 los espacios por columnas  **/
-   column-gap: 1rem;
+ .servicios
+  {
+       display: grid;   
+       grid-template-columns: repeat(3, 1fr);   /** divide en 3 los espacios por columnas  **/
+       column-gap: 1rem;
    
-}
+  }
 }
 
 
@@ -239,12 +240,12 @@ padding: 2rem;
 
 
 
-
+/** Contacto **/
 .formulario {
   
     background-color: var(--gris);
-    width: min(60rem, 100%);
-    margin: 0 auto;
+    width: min(60rem, 100%);   /** con este Skill comparara los dos argumentos y tomará el menor valor **/
+    margin: 0 auto;    /** Se recomienda usa en casos como la creacion de formularios y cuyo padre no es un display-flex**/
     padding: 2rem;
     border-radius: 1rem;
 
@@ -255,6 +256,15 @@ padding: 2rem;
     border: none;
 
 
+}
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: var(--primario);
+    font-weight: 2rem;
+    font-weight: 700;
 }
 
 
@@ -273,26 +283,14 @@ padding: 2rem;
         grid-template-columns: 50% 50%;
         grid-template-rows: auto auto 20rem ;
         column-gap: 1rem;
-        
-        
     }
+    
     .campo:nth-child(3),
-        .campo:nth-child(4) {
+    .campo:nth-child(4) 
+    {
         grid-column: 1 / 3;
+    }
 }
-}
-
-
-.formulario legend {
-    text-align: center;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-    color: var(--primario);
-    font-weight: 2rem;
-    font-weight: 700;
-}
-
 
 
 .campo {
@@ -304,8 +302,9 @@ padding: 2rem;
 .campo label {
  color: var(--blanco);
  font-weight: bold;
- display: block;
  margin-bottom: .5rem;
+ display: block;
+ 
 }
 
 
