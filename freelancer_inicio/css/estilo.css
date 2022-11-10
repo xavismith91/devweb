@@ -37,9 +37,21 @@ body{
 /** Utilidades **/
 
 
-.w-100 {
+.w-sm-100 {
 
     width: 100%;
+}
+
+
+.flex{
+
+    display: inline-flex;
+}
+
+.alinear-derecha {
+
+justify-content: flex-end;
+
 }
 
 @media(min-width:768px){
@@ -254,10 +266,10 @@ padding: 2rem;
 
 .formulario fieldset{
     border: none;
-
+     text-align: center;
 
 }
-.formulario legend {
+.formulario {
     text-align: center;
     font-size: 1.8rem;
     text-transform: uppercase;
@@ -332,13 +344,3 @@ padding: 2rem;
 
 
 
-.flex{
-
-    display: inline-flex;
-}
-
-.alinear-derecha {
-
-justify-content: flex-end;
-
-}
